@@ -36,3 +36,14 @@ List<string> descend = names.OrderByDescending(name => name).ToList();
 foreach ( string name in descend){
     Console.WriteLine($"{name}");
 }
+
+// Build a collection of these numbers sorted in ascending order
+List<int> numbs = new List<int>()
+{
+    15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+};
+
+List<int> ascend = numbs.OrderBy(numb => numb).ToList();
+foreach ( int numb in ascend){
+    Console.WriteLine($"{numb}");
+}
